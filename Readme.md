@@ -1,0 +1,4 @@
+This is a simple tool to take advantage of the pnpm audit feature where you can automatically add the vulnerable transitive dependencies to your package.json file without needing to switch to pnpm to do so. The primary reason for using this tool is to go through and bump all vulnerable transitive dependencies in a package you maintain to reduce the possibility of supply chain attacks while the changes get propagated through your transitive dependency tree. If the vulnerable package is a direct dependency you import, this will error out because it will recognize the installed version you have is in conflict with the version that is being overridden. However, for all other transitive dependencies they should be bumped for you in the same way `pnpm audit --fix` does.
+
+## Usage
+run `npx override-vulnerable-deps` from your project root to update your transitive vulnerable dependencies.

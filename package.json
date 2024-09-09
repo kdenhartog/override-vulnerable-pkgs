@@ -1,0 +1,12 @@
+{
+  "name": "override-vulnerable-pkgs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+  "override-vulnerable-pkgs": "./index.js"
+},
+  "keywords": ["dependency management", "security", "vulnerability management"],
+  "author": "Kyle Den Hartog",
+  "license": "MIT",
+  "description": "Use pnpm to add overrides for vulnerable packages when pnpm isn't your primary package tooling."
+}
